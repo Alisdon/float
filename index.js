@@ -21,13 +21,13 @@ window.onload = function () {
 
             if (offsetTop == 0) {
                 topAdd = true
-            } else if (offsetHeight + offsetTop == clientHeight) {
+            } else if (offsetHeight + offsetTop >= clientHeight) {
                 topAdd = false
             }
 
             if (offsetLeft == 0) {
                 leftAdd = true
-            } else if (offsetWidth + offsetLeft == clientWidth) {
+            } else if (offsetWidth + offsetLeft >= clientWidth) {
                 leftAdd = false
             }
 
